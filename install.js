@@ -20,12 +20,14 @@ var url = require('url')
 var util = require('util')
 var which = require('which')
 
-var cdnUrl = process.env.npm_config_phantomjs_cdnurl || process.env.PHANTOMJS_CDNURL || 'https://github.com/Vitallium/phantomjs/archive/fix-WOFF-file-support.zip'
+//var cdnUrl = process.env.npm_config_phantomjs_cdnurl || process.env.PHANTOMJS_CDNURL || '' 'https://github.com/Vitallium/phantomjs/archive/fix-WOFF-file-support.zip'
+
 //var cdnUrl = process.env.npm_config_phantomjs_cdnurl || process.env.PHANTOMJS_CDNURL ||  'https://bitbucket.org/ariya/phantomjs/downloads'
 
 
-var downloadUrl = cdnUrl; // + '/phantomjs-' + helper.version + '-'
+//var downloadUrl = cdnUrl + '/phantomjs-' + helper.version + '-'
 
+var downloadUrl = 'https://bitbucket.org/ariya/phantomjs/downloads/phantomjs-2.0.0-macosx.zip';
 var originalPath = process.env.PATH
 
 // If the process exits without going through exit(), then we did not complete.
